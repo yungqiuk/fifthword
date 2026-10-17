@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Кожне п'яте слово — читання з поступовим перекладом</title>
+<meta name="description" content="iOS-читалка: русская книга, в которой часть слов заменена английскими. Долю перевода задаёт кольцо. Работает офлайн.">
+<style>
+  :root {
+    --bg: #0E1625;
+    --card: #16202E;
+    --ink: #EFF1F5;
+    --muted: #97A2B4;
+    --accent: #F9AD37;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 22px 80px; }
+  h1 { font-size: 34px; line-height: 1.2; margin: 0 0 12px; }
+  h2 { font-size: 22px; margin: 40px 0 12px; }
+  p { margin: 0 0 16px; }
+  .lead { font-size: 19px; color: var(--muted); }
+  .sample {
+    background: var(--card); border-radius: 14px; padding: 22px 24px;
+    font-family: Georgia, "Times New Roman", serif; font-size: 19px; line-height: 1.7;
+    margin: 28px 0;
+  }
+  .en { color: var(--accent); }
+  nav a { color: var(--accent); text-decoration: none; margin-right: 18px; }
+  nav a:hover { text-decoration: underline; }
+  footer { color: var(--muted); font-size: 14px; margin-top: 56px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  .en-block { color: var(--muted); border-top: 1px solid #26303F; margin-top: 48px; padding-top: 24px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Кожне п'яте слово</h1>
+  <p class="lead">Українська книжка, в якій частину слів замінено англійськими.
+     Частку перекладу ви задаєте самі — кільцем, від нуля до ста відсотків.</p>
+
+  <div class="sample">
+    Сьогодні <span class="en">morning</span> я встав з <span class="en">bed</span>,
+    щоб піти в сад по <span class="en">apples</span>.
+  </div>
+
+  <p>Мозок добудовує зміст із контексту. Не добудував — дотик до слова показує
+     переклад і запам'ятовує його. Слово, яке ви вивчили, звільняє свій відсоток
+     для нового.</p>
+
+  <h2>Як це влаштовано</h2>
+  <ul>
+    <li>Почніть з 10–20%: кожне п'яте слово, і книжка читається майже як звичайна.</li>
+    <li>Порядок слів сталий: план на 20% містить у собі весь план на 10%.
+        Текст не перемішується, коли ви крутите кільце.</li>
+    <li>Власні назви та багатозначні слова не перекладаються ніколи.</li>
+    <li>Формати: EPUB, FB2, TXT. Свої книжки — через «Файли».</li>
+  </ul>
+
+  <h2>Усе офлайн</h2>
+  <p>Словник лежить усередині застосунку. Жодна книжка й жодне слово не йдуть
+     у мережу: інтернет потрібен лише для покупки та її відновлення.
+     Ми не збираємо про вас жодних даних.</p>
+
+  <h2>Ціна</h2>
+  <p>Три дні безкоштовно, повністю. Потім — десять сторінок на день безкоштовно
+     або разова покупка назавжди. Не підписка. Реклами немає.
+     Ціну у вашій валюті показує App Store.</p>
+
+  <nav>
+    <a href="privacy.html">Політика конфіденційності</a>
+    <a href="support.html">Підтримка</a>
+    <a href="terms.html">Умови використання</a>
+  </nav>
+
+  <div class="en-block">
+    <h2 style="margin-top:0">In English</h2>
+    <p>Every Fifth Word is an iOS reader for Ukrainian books that gradually replaces
+       words with their English equivalents. You choose how many — from 0 to 100% —
+       and your brain fills in the rest from context. Tap any English word to see
+       what it replaced. Everything works offline; no data is collected.</p>
+    <p><a href="privacy.html#en">Privacy policy</a> ·
+       <a href="support.html#en">Support</a> ·
+       <a href="terms.html#en">Terms of use</a></p>
+  </div>
+
+  <footer>
+    Словник побудовано на даних Вікісловника (CC BY-SA 4.0) і частотному списку
+    FrequencyWords (MIT).
+  </footer>
+
+</div>
+</body>
+</html>
